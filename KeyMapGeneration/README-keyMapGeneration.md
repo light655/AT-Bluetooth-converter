@@ -6,3 +6,5 @@
 4. Copy the array into **keyMaps.h**, and replace the corresponding array in that file.
 
 ## Please note that you need two key maps, one for non-extended keys, and another for extended keys.
+
+Examples of the input CSV file and output text file are provided, with both extended and non-extended keys. These are the key maps that I use on my BTC-5339-R0.
