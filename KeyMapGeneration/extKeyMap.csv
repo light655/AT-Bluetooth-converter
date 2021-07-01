@@ -1,0 +1,18 @@
+L super,1F,83
+R control,14,84
+R alt,11,86
+R super,27,87
+apps,2F,ED
+insert,70,D1
+home,6C,D2
+page up,7D,D3
+delete,71,D4
+end,69,D5
+page down,7A,D6
+R arrow,74,D7
+L arrow,6B,D8
+D arrow,72,D9
+U arrow,75,DA
+Kp / F slash,4A,DC
+kp enter,5A,E0
+macro,6F,83
