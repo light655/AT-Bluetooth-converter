@@ -8,9 +8,10 @@
 
 uint8_t thisKeyCode, pauseState = 0;
 bool isPause = false, isPS = false, ext = false, release = false;
-BleKeyboard myKB;
+BleKeyboard myKB("ESP32-BTC5339-R0");
 
 void setup() {
+  setCpuFrequencyMhz(240);
   myKB.begin();
   digitalWrite(PS2_CLK, LOW);
   digitalWrite(PS2_DATA, HIGH);
@@ -35,7 +36,10 @@ void loop() {
 
   pauseCheck(thisKeyCode);
   if(pauseState) {
-    if(pauseState == 8) pauseState = 0;
+    if(pauseState == 8) {
+      myKB.write(0xD0);
+      pauseState = 0;
+    }
     goto loopEnd;
   }
 
